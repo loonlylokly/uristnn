@@ -5,10 +5,10 @@ type Props = {
   size: number;
 };
 
-const PhoneIcon: FC<Props> = ({size}) => {
+const EmailIcon: FC<Props> = ({size}) => {
   return (
     <Image
-      src="/icons/phone.svg"
+      src="/icons/email.svg"
       alt='Позвонить'
       width={size}
       height={size}
@@ -16,4 +16,4 @@ const PhoneIcon: FC<Props> = ({size}) => {
   );
 }
 
-export default PhoneIcon;
+export default EmailIcon;
