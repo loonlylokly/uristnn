@@ -1,0 +1,50 @@
+.menu__link[aria-label]{
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.menu,
+.menu__list,
+.btn__phone,
+.btn__konsult {
+  display: none;
+}
+
+@media (width >= 855px) {
+  .menu {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 5rem;
+  }
+
+  .menu__list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 5rem;
+  
+    list-style-type: none;
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
+
+@media (width >= 1200px) {
+  .menu {
+    width: 80%;
+  }
+  .menu__list {
+    width: 40%;
+    justify-content: flex-end;
+  }
+  .btn__konsult,
+  .btn__phone {
+    display: initial;
+  }
+}
+
