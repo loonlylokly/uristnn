@@ -1,0 +1,94 @@
+.hero {
+  display: flex;
+  margin: 0;
+}
+
+.textblock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+}
+
+.title {
+  font-size: 3.2rem;
+}
+
+.text {
+  font-size: 1.6rem;
+}
+
+.subtext {
+  display: none;
+}
+
+.list__benefits {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 0.4rem;
+}
+
+.benefit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+  font-size: 1.5rem;
+}
+
+.benefit > p {
+  line-height: 120%;
+}
+
+.imageblock {
+  display: none;
+}
+
+@media (width >= 540px) {
+  .list__benefits {
+    display: grid;
+  }
+
+  .subtext {
+    display: initial;
+  }
+}
+
+@media (width >= 780px) {
+  .textblock {
+    width: 80%;
+    padding: 30px 0 0 0;
+  }
+
+  .imageblock {
+    width: 60%;
+    height: 60%;
+    display: initial;
+    padding: 40px 0 0;
+  }
+
+  .image {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media (width >= 1200px) {
+  .textblock {
+    width: 100%;
+    padding: 40px 0 0 0;
+    row-gap: 2.2rem;
+  }
+
+  .imageblock {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 400px;
+    height: 400px;
+  }
+}

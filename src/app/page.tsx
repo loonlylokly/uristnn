@@ -1,3 +1,4 @@
+import Hero from '@/modules/Hero/Hero';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <h1>Hello World</h1>
+      <Hero />
     </>
   )
 }
