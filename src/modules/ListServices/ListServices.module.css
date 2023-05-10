@@ -1,0 +1,190 @@
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--color-text-primary);
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.link {
+  display: none;
+  font-size: 1.4rem;
+}
+
+.category {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 1%;
+  row-gap: 4px;
+  border: 1px solid var(--color-text-primary);
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.btn__switch {
+  font-size: 1.06rem;
+}
+
+.btn__switch:nth-of-type(1)::after {
+  content: "Регистрация";
+}
+
+.btn__switch:nth-of-type(2)::after {
+  content: "Ликвидация";
+}
+
+.btn__switch:nth-of-type(3)::after {
+  content: "Юр услуги";
+}
+
+.btn__switch:nth-of-type(4)::after {
+  content: "Печать";
+}
+
+.btn__switch:nth-of-type(5)::after {
+  content: "Бух услуги";
+}
+
+.lists {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 1240px;
+  display: flex;
+}
+
+.cards__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  gap: 10px;
+  transition: .5s;
+}
+
+.cards__list:nth-of-type(1) {
+  left: -200%;
+}
+
+.cards__list:nth-of-type(2) {
+  left: -100%;
+}
+
+.cards__list:nth-of-type(4) {
+  left: 100%;
+}
+
+.cards__list:nth-of-type(5) {
+  left: 200%;
+}
+
+.category[aria-label='registr'] ~ .lists > .cards__list {
+  margin-left: 200%;
+}
+
+.category[aria-label='likvid'] ~ .lists > .cards__list {
+  margin-left: 100%;
+}
+
+.category[aria-label='yuriduslugi'] ~ .lists > .cards__list {
+  margin-left: 0;
+}
+
+.category[aria-label='pechati'] ~ .lists > .cards__list {
+  margin-left: -100%;
+}
+
+.category[aria-label='buhuslugi'] ~ .lists > .cards__list {
+  margin-left: -200%;
+}
+
+@media (width >= 360px) {
+  .btn__switch {
+    font-size: 1.3rem;
+  }
+}
+
+@media (width >= 540px) {
+  .lists {
+    height: 614px;
+  }
+
+  .btn__switch {
+    font-size: 1.4rem;
+  }
+}
+
+@media (width >= 580px) {
+  .services {
+    padding-top: 20px;
+  }
+  
+  .cards__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width >= 780px) {
+  .category {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 1%;
+    row-gap: 4px;
+  }
+
+  .btn__switch:nth-of-type(3)::after {
+    content: "Юридические услуги";
+  }
+  
+  .btn__switch:nth-of-type(5)::after {
+    content: "Бухгалтерские услуги";
+  }
+}
+
+@media (width >= 890px) {
+  .cards__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (width >= 980px) {
+  .category {
+    width: fit-content;
+    column-gap: 4px;
+  }
+
+  .btn__switch {
+    font-size: 1.5rem;
+  }
+
+  .lists {
+    height: 570px;
+  }  
+}
+
+@media (width >= 1200px) {
+  .btn__switch {
+    font-size: 1.6rem;
+  }
+}
