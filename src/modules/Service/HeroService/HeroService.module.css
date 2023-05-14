@@ -1,0 +1,69 @@
+.hero {
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.textblock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.title {
+  font-size: 2.6rem;
+}
+
+.subtitle {
+  display: none;
+}
+
+.price {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.list__benefits {
+  display: grid;
+  display: none;
+  grid-template-columns: 50% 50%;
+  row-gap: 1rem;
+}
+
+.benefit {
+  width: 100%;
+}
+
+.imageblock {
+  display: none;
+}
+
+@media (width >= 540px) {
+  .list__benefits {
+    display: grid;
+  }
+
+  .subtitle {
+    display: initial;
+  }
+}
+
+@media (width >= 680px) {
+  .textblock {
+    width: 68%;
+  }
+
+  .imageblock {
+    width: 29%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 0;
+  }
+}
+
+@media (width >= 1200px) {
+  .textblock {
+    width: 100%;
+  }
+}
