@@ -1,0 +1,18 @@
+.description {
+  width: 100%;
+}
+
+.title {
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.marked {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.list {
+  padding: 4px 0px 18px 48px;
+  margin: 0;
+}
