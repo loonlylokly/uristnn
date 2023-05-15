@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Image from "next/image"
 import styles from "./HeroService.module.css";
+import BtnOpenPopUp from "@/components/Buttons/OpenPopUp/BtnOpenPopUp";
 
 type Props = {
   props: {
@@ -30,6 +31,7 @@ const HeroService: FC<Props> = ({props}) => {
         <h1 className={styles.title} itemProp="name">{props.title}</h1>
         <p className={styles.description} itemProp="description">{props.description}</p>
         <p className={styles.price}>{props.price}</p>
+        <BtnOpenPopUp myClassName={styles.btn__cta} type="btnPrimary">{props.ctaTextBtn}</BtnOpenPopUp>
       </div>
     </section>
   )

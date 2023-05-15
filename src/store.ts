@@ -11,6 +11,11 @@ type ListServices = {
   setCategory: (category: ServicesCategory) => void;
 };
 
+type PopUp = {
+  popup: boolean;
+  togglePopUp: () => void;
+};
+
 export const useHamburgerMenu = create<HamburgerMenu>()((set) => ({
   hamburgerMenu: false,
   toggleMenu: () => set((state) => ({ hamburgerMenu: !state.hamburgerMenu })),
@@ -19,4 +24,9 @@ export const useHamburgerMenu = create<HamburgerMenu>()((set) => ({
 export const useListServices = create<ListServices>()((set) => ({
   category: 'yuriduslugi',
   setCategory: (category) => set((state) => ({category: category}))
+}));
+
+export const usePopUp = create<PopUp>()((set) => ({
+  popup: false,
+  togglePopUp: () => set((state) => ({ popup: !state.popup })),
 }));

@@ -1,3 +1,4 @@
+import BtnOpenPopUp from "@/components/Buttons/OpenPopUp/BtnOpenPopUp";
 import CheckmarkIcon from "@/components/Icons/CheckmarkIcon/CheckmarkIcon";
 import Image from "next/image";
 import styles from "./Hero.module.css";
@@ -21,6 +22,7 @@ export default function Hero() {
             <CheckmarkIcon size={24} /><p>Представительство ваших интересов в суде</p>
           </div>
         </div>
+        <BtnOpenPopUp type={"btnPrimary"} myClassName={styles.btn__cta}>Консультация</BtnOpenPopUp>
       </div>
       <div className={styles.imageblock}>
         <Image
