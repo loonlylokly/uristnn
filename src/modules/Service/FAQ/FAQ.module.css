@@ -1,0 +1,44 @@
+.faq {
+  width: 100%;
+}
+
+.question {
+  padding: 20px;
+  margin: 16px 0;
+  border-radius: 0.25rem;
+  box-shadow: 4px 4px 10px -4px rgba(0, 0, 0, 0.25), -4px -4px 10px -4px rgba(0, 0, 0, 0.25);
+  user-select: none;
+  cursor: pointer;
+}
+
+.question__title {
+  font-size: 1.8rem;
+}
+
+.answer {
+  padding: 22px 4px 4px;
+}
+
+.list {
+  padding: 4px 0px 18px 48px;
+  margin: 0;
+}
+
+/* Убираем стандартный маркер Chrome */
+.question summary::-webkit-details-marker {
+  display: none
+}
+/* Убираем стандартный маркер Firefox */
+.question > summary {
+  list-style: none;
+}
+
+/* Добавляем собственный маркер для закрытого состояния */
+/* .marker::after {
+  content: '+';
+} */
+
+/* Добавляем собственный маркер для открытого состояния */
+.question[open] > .marker:after {
+  content: '-';
+}

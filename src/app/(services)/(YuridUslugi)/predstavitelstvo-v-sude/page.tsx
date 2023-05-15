@@ -2,6 +2,7 @@ import HeroService from "@/modules/Service/HeroService/HeroService";
 import Description from "@/modules/Service/Description/Description";
 import { predVSude } from "@/../data/Services/yuriduslugi/pred-v-sude";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
+import FAQ from "@/modules/Service/FAQ/FAQ";
 
 export default function PredVSude() {
   return (
@@ -17,6 +18,8 @@ export default function PredVSude() {
       <Description props={predVSude.documents_needed} />
       <Description props={predVSude.how_work} />
       <Description props={predVSude.who__need} />
+
+      <FAQ props={predVSude.FAQ}/>
     </>
   )
 }
