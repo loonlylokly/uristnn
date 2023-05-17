@@ -1,6 +1,7 @@
 import HeroService from "@/modules/Service/HeroService/HeroService";
 import FAQ from "@/modules/Service/FAQ/FAQ";
 import Description from "@/modules/Service/Description/Description";
+import Catalog from "@/modules/Service/Pechati/Catalog/Catalog";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { pechatiTexts } from "@/../data/Services/pechati/pechati";
 
@@ -17,6 +18,8 @@ export default function Pechati() {
 
       <Description props={pechatiTexts.description_1} />
       <Description props={pechatiTexts.description_2} />
+
+      <Catalog title="Каталог печатей"/>
 
       <Description props={pechatiTexts.documents_needed} />
       <Description props={pechatiTexts.how_work} />
