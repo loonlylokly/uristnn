@@ -16,6 +16,11 @@ type PopUp = {
   togglePopUp: () => void;
 };
 
+type ActionMenu = {
+  actionMenu: boolean;
+  toggleActionMenu: () => void;
+};
+
 export const useHamburgerMenu = create<HamburgerMenu>()((set) => ({
   hamburgerMenu: false,
   toggleMenu: () => set((state) => ({ hamburgerMenu: !state.hamburgerMenu })),
@@ -29,4 +34,9 @@ export const useListServices = create<ListServices>()((set) => ({
 export const usePopUp = create<PopUp>()((set) => ({
   popup: false,
   togglePopUp: () => set((state) => ({ popup: !state.popup })),
+}));
+
+export const useActionMenu = create<ActionMenu>()((set) => ({
+  actionMenu: false,
+  toggleActionMenu: () => set((state) => ({ actionMenu: !state.actionMenu })),
 }));
