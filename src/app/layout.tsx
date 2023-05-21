@@ -3,6 +3,9 @@ import { Inter } from 'next/font/google'
 import Header from '@/modules/Header/Header';
 import Footer from '@/modules/Footer/Footer';
 import ActionButton from '@/modules/ActionButton/ActionButton';
+import PopUp from '@/modules/PopUp/PopUp';
+import PopUpContacts from '@/components/Lists/PopUpContacts/PopUpContacts';
+import PopUpForm from '@/components/Forms/PopUpForm/PopUpForm';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +28,10 @@ export default function RootLayout({
         </main>
         <Footer />
         <ActionButton />
+        <PopUp title={"Свяжитесь с нами!"}>
+          <PopUpContacts />
+          <PopUpForm />
+        </PopUp>
       </body>
     </html>
   )
