@@ -20,5 +20,9 @@
     "react-hook-form": "^7.45.4",
     "typescript": "5.1.6",
     "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "markdown-to-jsx": "^7.3.2"
   }
 }

@@ -1,0 +1,22 @@
+.content {
+  display: grid;
+  row-gap: 20px;
+}
+
+.content ul {
+  padding: 0 40px;
+  list-style-type: "—  ";
+}
+
+.content h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.content h2 {
+	padding-top: 94px;
+	margin-top: -94px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+}
