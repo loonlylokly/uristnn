@@ -8,11 +8,28 @@
 .list {
   display: flex;
   list-style-type: none;
+  flex-direction: row;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+}
+
+@media (width >= 540px) {
+  .item {
+    font-size: 1.6rem;
+  }
 }
 
 @media (width >= 780px) {
   .breadcrumbs {
     padding-top: 12px;
     padding-bottom: 8px;
+  }
+
+  .item {
+    font-size: 1.7rem;
   }
 }

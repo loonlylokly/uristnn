@@ -1,8 +1,8 @@
 "use client"
 
 import { MouseEventHandler } from "react";
-import styles from "@/modules/ListServices/ListServices.module.css";
 import { useListServices } from "@/store";
+import styles from "@/modules/ListServices/ListServices.module.css";
 
 export default function Categories() {
   const category = useListServices((state) => state.category);

@@ -10,14 +10,13 @@ type Props = {
 };
 
 const Toc: FC<Props> = ({toc, toc_link, url}) => {
-  console.log(toc, toc_link);
   const tocArr = toc.split(", ");
   const toc_linkArr = toc_link.split(", ");
   return (
     <details className={styles.toc}>
       <summary className={styles.toc__summary}>
         <Image 
-          src='/images/toc2.svg'
+          src='/icons/toc.svg'
           alt='Содержание'
           width={24}
           height={24}

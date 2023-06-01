@@ -130,7 +130,7 @@
   }
 
   .btn__switch {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -174,17 +174,11 @@
     column-gap: 4px;
   }
 
-  .btn__switch {
-    font-size: 1.5rem;
-  }
-
   .lists {
     height: 570px;
   }  
 }
 
 @media (width >= 1200px) {
-  .btn__switch {
-    font-size: 1.6rem;
-  }
+
 }

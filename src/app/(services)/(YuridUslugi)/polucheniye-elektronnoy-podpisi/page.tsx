@@ -11,7 +11,7 @@ export default function ElectrPodpis() {
       <Breadcrumbs
         prevsLink={{"Услуги":"/services"}}
         prevsName={["Услуги"]}
-        current="Электроннвя подпись"
+        current="Электронная подпись"
       />
 
       <HeroService props={electroPodpis.hero_section} />
