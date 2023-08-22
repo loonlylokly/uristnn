@@ -1,0 +1,23 @@
+.breadcrumbs {
+  padding-bottom: 16px;
+}
+
+.toc {
+  margin: 16px 0;
+}
+
+.toc__summary {
+  display: flex;
+  align-items: center;
+}
+
+.toc__summary::marker {
+  content: "";
+}
+
+.toc__list {
+  padding: 10px 10px 0;
+  display: grid;
+  row-gap: 10px;
+  list-style: none;
+}

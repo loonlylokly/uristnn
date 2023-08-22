@@ -1,0 +1,8 @@
+.catalog {
+  padding: 28px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.8rem;
+  list-style-type: none;
+}

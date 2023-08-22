@@ -1,0 +1,32 @@
+.item {
+  width: 220px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+}
+
+.name {
+  height: 60px;
+  padding: 8px 0 16px 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.btnWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  letter-spacing: 0.08rem;
+}

@@ -1,0 +1,59 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding: 120px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-back-header);
+  opacity: 0;
+  transition: .2s;
+  backdrop-filter: blur(5px);
+  animation: closeMenu .3s linear;
+}
+
+.menu__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4rem;
+  list-style-type: none;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.menu__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.btn__konsult,
+.btn__phone {
+  width: 218px;
+}
+
+.btn__konsult {
+  text-transform: none;
+  font-weight: 500;
+}
+
+.menu__link[aria-label] {
+  border-bottom: 2px solid var(--color-primary);
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+@media (width >= 855px) {
+  .menu {
+    display: none;
+  } 
+}
