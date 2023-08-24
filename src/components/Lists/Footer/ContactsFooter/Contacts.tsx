@@ -1,4 +1,3 @@
-import Link from "next/link";
 import AddressIcon from "@/components/Icons/Address/AddressIcon";
 import EmailIcon from "@/components/Icons/Email/EmailIcon";
 import PhoneIcon from "@/components/Icons/Phone/PhoneIcon";
@@ -21,20 +20,20 @@ const Contacts = () => {
         </a>
       </li>
       <li className={styles.contacts__item}>
-        <Link className={styles.contacts__link} href="mailto:uristnn.ru@yandex.ru">
+        <a className={styles.contacts__link} href="mailto:uristnn.ru@yandex.ru">
           <EmailIcon size={32}/>
           <p itemProp="email">uristnn.ru@yandex.ru</p>
-        </Link>
+        </a>
       </li>
       <li className={styles.contacts__item}>
-        <Link className={styles.contacts__link} href="/contacts">
+        <a className={styles.contacts__link} href="/contacts">
           <AddressIcon size={32}/>
           <span itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
             <span itemProp="postalCode">603002,&ensp;</span>
             <span itemProp="addressLocality">Нижний Новгород,&ensp;</span>
             <span itemProp="streetAddress">ул.Литвинова, д.74Б, 5 этаж, офис 501</span>
           </span>
-        </Link>
+        </a>
       </li>
     </ul>
   );
