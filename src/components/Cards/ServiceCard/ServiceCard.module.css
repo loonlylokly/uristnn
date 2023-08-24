@@ -33,7 +33,7 @@
 }
 
 .title {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 .text {
@@ -51,7 +51,7 @@
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .text {
@@ -64,5 +64,15 @@
   .card:nth-of-type(8),
   .card:nth-of-type(9) {
     display: flex;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (width >= 1200px) {
+  .title {
+    font-size: 1.8rem;
   }
 }

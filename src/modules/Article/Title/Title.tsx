@@ -16,9 +16,9 @@ const Title: FC<Props> = ({title}) => {
           <span> / </span>
           <span>{title.title}</span>
         </div>
-        <div className={styles.tags}>
+        {/* <div className={styles.tags}>
           {tags[0] !== '' && tags.map((tag: any) => (<span key={tag} className={styles.tag}>{tag}</span>))}
-        </div>
+        </div> */}
         <h1 className={styles.title}>{title.title}</h1>
         <time className={styles.date} dateTime="2017-06-13">{title.date}</time>
       </section>
