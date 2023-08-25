@@ -10,7 +10,7 @@
 
   --color-white: 0, 0%, 100%;
   --color-black: 243 45% 8%;
-  --color-red: 0, 100%, 50%;
+  --color-red: 0, 100%, 46%;
   --color-white-limpid: 0, 0%, 100%, 0.8;
   --color-steel: 250, 20%, 85%, 0.9 ;
 
@@ -182,21 +182,17 @@ section {
 .switcher {
   width: fit-content;
   height: fit-content;
-  padding: 13px 25px;
+  padding: 8px 10px;
+  background: var(--color-back-primary);
   border-radius: 8px;
+  border: none;
   outline: none; 
+  transition: .2s;
   text-transform: uppercase;
   letter-spacing: 0.13rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   cursor: pointer;
-}
-
-.switcher {
-  padding: 5px 10px;
-  background: var(--color-back-primary);
-  border: none;
-  transition: .2s;
   user-select: none;
 }
 
