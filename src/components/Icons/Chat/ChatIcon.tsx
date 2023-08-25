@@ -12,6 +12,7 @@ const ChatIcon: FC<Props> = ({size}) => {
       alt='Связаться'
       width={size}
       height={size}
+      loading = 'eager'
     />
   );
 }

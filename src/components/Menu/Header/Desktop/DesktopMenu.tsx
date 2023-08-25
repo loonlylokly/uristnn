@@ -12,6 +12,9 @@ const DesktopMenu = () => {
           <Link className={styles.menu__link} href="/services">Услуги</Link>
         </li>
         <li className={styles.menu__item}>
+          <Link className={styles.menu__link} href="/posts">Статьи</Link>
+        </li>
+        <li className={styles.menu__item}>
           <Link className={styles.menu__link} href="/contacts">Контакты</Link>
         </li>
       </ul>

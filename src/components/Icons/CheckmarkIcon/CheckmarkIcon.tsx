@@ -12,6 +12,7 @@ const CheckmarkIcon: FC<Props> = ({size}) => {
       alt='Позвонить'
       width={size}
       height={size}
+      loading = 'eager'
     />
   );
 }

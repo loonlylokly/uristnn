@@ -14,11 +14,11 @@ const ServicesLists = () => {
 
   const getHeight = (category: ServicesCategory) => {
     const heights = {
-      "registr": { 'mobile': '1000px', 'miniTablet': '890px', 'tablet': '420px' },
-      "likvid": { 'mobile': '660px', 'miniTablet': '460px', 'tablet': '240px' },
-      "yuriduslugi": { 'mobile': '980px', 'miniTablet': '660px', 'tablet': '400px' },
-      "pechati": { 'mobile': '600px', 'miniTablet': '440px', 'tablet': '240px' },
-      "buhuslugi": { 'mobile': '430px', 'miniTablet': '260px', 'tablet': '260px' },
+      "registr": { 'mobile': '880px', 'miniTablet': '680px', 'tablet': '480px' },
+      "likvid": { 'mobile': '540px', 'miniTablet': '430px', 'tablet': '240px' },
+      "yuriduslugi": { 'mobile': '840px', 'miniTablet': '560px', 'tablet': '400px' },
+      "pechati": { 'mobile': '540px', 'miniTablet': '400px', 'tablet': '240px' },
+      "buhuslugi": { 'mobile': '400px', 'miniTablet': '240px', 'tablet': '240px' },
     }
     
     if (typeof window !== "undefined") {
