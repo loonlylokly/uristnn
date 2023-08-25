@@ -52,7 +52,7 @@
   text-decoration: none;
 }
 
-@media (width >= 855px) {
+@media (width >= 920px) {
   .menu {
     display: none;
   } 

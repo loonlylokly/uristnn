@@ -29,12 +29,13 @@ const PhoneIcon = ({
   myClassName: string
 }) => {
   return (
-    <Link className={`${styles.logo} ${myClassName}`} href="/" aria-label="Главная">
+    <Link className={`${styles.logo} ${myClassName}`} href="/" aria-label="Статский Советник Главная">
       <Image
         src={src}
         alt='Логотип компании Статский Советник'
         width={width}
         height={height}
+        loading = 'eager'
         className={styles.image}
       />
       <span className={styles.text__wrapper}>

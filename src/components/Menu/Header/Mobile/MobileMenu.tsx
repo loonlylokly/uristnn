@@ -20,6 +20,9 @@ const MobileMenu: FC<Props> = ({myClassName}) => {
           <Link className={styles.menu__link} href="/services" onClick={toggleMenu}>Услуги</Link>
         </li>
         <li className={styles.menu__item}>
+          <Link className={styles.menu__link} href="/posts" onClick={toggleMenu}>Статьи</Link>
+        </li>
+        <li className={styles.menu__item}>
           <Link className={styles.menu__link} href="/contacts" onClick={toggleMenu}>Контакты</Link>
         </li>
       </ul>

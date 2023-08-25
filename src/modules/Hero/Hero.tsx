@@ -30,6 +30,7 @@ export default function Hero() {
           alt='logo'
           width={480}
           height={480}
+          loading = 'eager'
           className={styles.image}
         />
       </div>

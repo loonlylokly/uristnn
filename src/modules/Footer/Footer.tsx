@@ -19,11 +19,11 @@ export default function Footer() {
         <Contacts />
       </div>
       <div className={styles.companies}>
-        <h4 className={styles.companies__title}><Link href="">Юридическим лицам</Link></h4>
+        <h4 className={styles.companies__title}>Юридическим лицам</h4>
         <CompaniesServices />
       </div>
       <div className={styles.personal}>
-        <h4 className={styles.personal__title}><Link href="">Физическим лицам</Link></h4>
+        <h4 className={styles.personal__title}>Физическим лицам</h4>
         <PersonalServices />
       </div>
     </footer>

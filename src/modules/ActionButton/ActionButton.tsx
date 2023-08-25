@@ -15,7 +15,6 @@ const ActionButton = () => {
   return (
     <>
       <div className={styles.button__fixed}>
-        {/* <button className={`${styles.button} ${styles.open__basket}`}></button> */}
         <div className={`${styles.menu} ${!actionMenu && styles.menu__closed}`}>
           <div className={`${styles.button} ${!actionMenu && styles.button__closed}`}>
             <ViberIcon size={32} />
@@ -27,7 +26,7 @@ const ActionButton = () => {
             <TelegramIcon size={24} />
           </div> 
           <div className={`${styles.button} ${!actionMenu && styles.button__closed}`}>
-            <a className="icon" href={actionMenu ? "tel:+78314133224":""}><PhoneIcon size={32}/></a>
+            <a className="icon" href="tel:+78314133224"><PhoneIcon size={32}/></a>
           </div>
         </div>
         <button className={`${styles.button} ${styles.open__menu}`} onClick={toggleActionMenu}>

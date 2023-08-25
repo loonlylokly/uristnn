@@ -92,7 +92,7 @@
   }
 }
 
-@media (width >= 855px) {
+@media (width >= 920px) {
   .header {
     padding-inline: 40px;
   }
