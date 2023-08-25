@@ -29,7 +29,7 @@ const PhoneIcon = ({
   myClassName: string
 }) => {
   return (
-    <Link className={`${styles.logo} ${myClassName}`} href="/" aria-label="Главная">
+    <Link className={`${styles.logo} ${myClassName}`} href="/" aria-label="Статский Советник">
       <Image
         src={src}
         alt='Логотип компании Статский Советник'
@@ -39,7 +39,7 @@ const PhoneIcon = ({
         itemProp="image"
       />
       <span className={styles.text__wrapper} itemProp="name">
-        <p className={`${styles.text} ${cormorant_infant.variable} ${playfair_display_SC.variable}`}>&ensp;<span className={styles.letter__big}>С</span><span className={styles.letter__t}>т</span>a<span className={styles.letter__t}>т</span>ский</p>
+        <p className={`${styles.text} ${cormorant_infant.variable} ${playfair_display_SC.variable}`}>&nbsp;<span className={styles.letter__big}>С</span><span className={styles.letter__t}>т</span>a<span className={styles.letter__t}>т</span>ский</p>
         <p className={`${styles.text} ${cormorant_infant.variable} ${playfair_display_SC.variable}`}><span className={styles.letter__big}>С</span>ове<span className={styles.letter__t}>т</span>ник</p>
       </span>
     </Link>

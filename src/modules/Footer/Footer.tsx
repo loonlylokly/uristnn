@@ -15,7 +15,7 @@ export default function Footer() {
         <SocialList />
       </div>
       <div className={styles.contacts}>
-        <h4 className={styles.contacts__title}><Link href="/about">Контакты</Link></h4>
+        <h4 className={styles.contacts__title}><Link href="/contacts">Контакты</Link></h4>
         <Contacts />
       </div>
       <div className={styles.companies}>

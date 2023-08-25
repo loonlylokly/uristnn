@@ -12,10 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.logo {
-  width: 90%;
+  margin-top: -10px;
 }
 
 .companies,
@@ -27,7 +24,7 @@
 .companies__title,
 .personal__title,
 .contacts__title {
-  padding-bottom: 12px;
+  padding-bottom: 24px;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
