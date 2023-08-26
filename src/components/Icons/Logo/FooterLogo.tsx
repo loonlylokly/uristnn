@@ -29,7 +29,7 @@ const PhoneIcon = ({
   myClassName: string
 }) => {
   return (
-    <Link className={`${styles.logo} ${myClassName}`} href="/" aria-label="Статский Советник">
+    <Link className={`${styles.logo} ${myClassName}`} href="/">
       <Image
         src={src}
         alt='Логотип компании Статский Советник'

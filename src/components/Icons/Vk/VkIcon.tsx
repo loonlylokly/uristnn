@@ -7,7 +7,7 @@ type Props = {
 
 const VkIcon: FC<Props> = ({size=32}) => {
   return (
-    <Link className="icon" href="https://vk.com/stsov_nn" target="_blank" aria-label="VK Статский советник">
+    <Link className="icon" href="https://vk.com/stsov_nn" target="_blank" rel="nofollow" aria-label="VK Статский советник">
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 128.000000 128.000000">
         <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)" stroke="none">
         <path d="M461 987 c-34 -17 -36 -32 -6 -45 14 -7 30 -23 35 -38 13 -33 13

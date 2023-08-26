@@ -7,7 +7,7 @@ type Props = {
 
 const TelegramIcon: FC<Props> = ({size=32}) => {
   return (
-    <Link className="icon" href="https://t.me/StatSov" target="_blank" aria-label="Telegram Статский советник">
+    <Link className="icon" href="https://t.me/StatSov" target="_blank" rel="nofollow" aria-label="Telegram Статский советник">
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 128.000000 128.000000">
         <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)" stroke="none">
         <path d="M625 950 c-314 -120 -582 -226 -597 -235 -62 -36 -30 -61 147 -115
