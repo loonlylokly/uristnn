@@ -5,13 +5,14 @@ import More from '@/modules/Article/More/More';
 import Article from '@/modules/Article/Text/Text';
 import styles from './page.module.css';
 import Toc from "@/modules/Toc/Toc";
+import { notFound } from "next/navigation"
 
 const getPostContent = (url: string) => {
   let content = '';
   if (fs.existsSync(`./posts/${url}.md`)) {
     content = fs.readFileSync(`./posts/${url}.md`, 'utf-8');
   } else {
-    content = fs.readFileSync(`./posts/not-found.md`, 'utf-8');
+    notFound();
   }
   const post = matter(content);
   return post;

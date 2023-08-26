@@ -30,6 +30,8 @@
   font-weight: 700;
   font-size: 2.6rem;
   letter-spacing: 0.8px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .letter__big {

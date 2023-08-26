@@ -7,7 +7,7 @@ type Props = {
 
 const ViberIcon: FC<Props> = ({size=32}) => {
   return (
-    <Link className="icon" href="https://viber.click/79202533224" target="_blank" aria-label="Viber Статский советник">
+    <Link className="icon" href="https://viber.click/79202533224" target="_blank" rel="nofollow" aria-label="Viber Статский советник">
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 128.000000 128.000000">
         <g transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)" stroke="none">
         <path d="M429 1135 c-105 -33 -203 -133 -234 -239 -21 -70 -20 -285 1 -356 9

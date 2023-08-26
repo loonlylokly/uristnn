@@ -15,6 +15,7 @@ const Card: FC<Props> = ({card}) => {
         alt={card.name}
         width={164}
         height={100}
+        loading='lazy'
         className={styles.image}
       />
       <h3 className={styles.name}>{card.name}</h3>
