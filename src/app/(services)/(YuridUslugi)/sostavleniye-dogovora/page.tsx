@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { sostavDogovor } from "@/../data/Services/yuriduslugi/sostav-dogovor";
 
+export const metadata = {
+  title: sostavDogovor.metadata.title,
+  description: sostavDogovor.metadata.description,
+  keywords: sostavDogovor.metadata.keys,
+}
+
 export default function SostavDogovor() {
   return (
     <>

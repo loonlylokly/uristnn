@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { electroPodpis } from "@/../data/Services/yuriduslugi/electr-podpis";
 
+export const metadata = {
+  title: electroPodpis.metadata.title,
+  description: electroPodpis.metadata.description,
+  keywords: electroPodpis.metadata.keys,
+}
+
 export default function ElectrPodpis() {
   return (
     <>

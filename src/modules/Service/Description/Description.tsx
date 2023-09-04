@@ -19,20 +19,20 @@ const Description: FC<Props> = ({props}) => {
           if (typeof(item) !== "string") {
             if (item.hasOwnProperty('ordered_list')) {
               return (
-                <ul key={index} className={styles.list}>
+                <ol key={index} className={styles.list}>
                   {item.ordered_list.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
-                </ul>
+                </ol>
               )
             }
             if (item.hasOwnProperty('unordered_list')) {
               return (
-                <ol key={index} className={styles.list}>
+                <ul key={index} className={styles.list}>
                   {item.unordered_list.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
-                </ol>
+                </ul>
               )
             }
           }

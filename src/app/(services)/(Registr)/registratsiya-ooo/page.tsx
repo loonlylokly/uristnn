@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { registrOOO } from "@/../data/Services/register/registratsiya-ooo";
 
+export const metadata = {
+  title: registrOOO.metadata.title,
+  description: registrOOO.metadata.description,
+  keywords: registrOOO.metadata.keys,
+}
+
 export default function RegOOO() {
   return (
     <>

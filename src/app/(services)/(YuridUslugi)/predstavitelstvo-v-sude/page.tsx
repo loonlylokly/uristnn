@@ -5,6 +5,12 @@ import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import FAQ from "@/modules/Service/FAQ/FAQ";
 import Price from "@/modules/Service/Price/Price";
 
+export const metadata = {
+  title: predVSude.metadata.title,
+  description: predVSude.metadata.description,
+  keywords: predVSude.metadata.keys,
+}
+
 export default function PredVSude() {
   return (
     <>
@@ -16,7 +22,7 @@ export default function PredVSude() {
       <HeroService props={predVSude.hero_section} />
       <Description props={predVSude.description_1} />
 
-      <Price
+      {/* <Price
         services={[
           {
             nameSection: 'Услуга 1',
@@ -29,7 +35,7 @@ export default function PredVSude() {
         ]}
         additional={[]}
         times={[]}
-      />
+      /> */}
 
       <Description props={predVSude.documents_needed} />
       <Description props={predVSude.how_work} />

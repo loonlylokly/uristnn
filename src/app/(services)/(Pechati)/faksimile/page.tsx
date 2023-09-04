@@ -4,6 +4,13 @@ import Description from "@/modules/Service/Description/Description";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { faksimileTexts } from "@/../data/Services/pechati/faksimile";
 
+export const metadata = {
+  title: faksimileTexts.metadata.title,
+  description: faksimileTexts.metadata.description,
+  keywords: faksimileTexts.metadata.keys,
+}
+
+
 export default function Faksimile() {
   return (
     <>

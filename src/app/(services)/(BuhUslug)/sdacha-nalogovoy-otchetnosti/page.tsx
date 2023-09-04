@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { nalogOtchet } from "@/../data/Services/buhuslugi/nalog-otchet";
 
+export const metadata = {
+  title: nalogOtchet.metadata.title,
+  description: nalogOtchet.metadata.description,
+  keywords: nalogOtchet.metadata.keys,
+}
+
 export default function NalogOtchet() {
   return (
     <>

@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { registrIp } from "@/../data/Services/register/registratsiya-ip";
 
+export const metadata = {
+  title: registrIp.metadata.title,
+  description: registrIp.metadata.description,
+  keywords: registrIp.metadata.keys,
+}
+
 export default function RegIP() {
   return (
     <>

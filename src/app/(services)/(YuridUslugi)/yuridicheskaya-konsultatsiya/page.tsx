@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { yuridKonsula } from "@/../data/Services/yuriduslugi/yurid-konsulta";
 
+export const metadata = {
+  title: yuridKonsula.metadata.title,
+  description: yuridKonsula.metadata.description,
+  keywords: yuridKonsula.metadata.keys,
+}
+
 export default function YuridKonsulta() {
   return (
     <>
@@ -32,7 +38,6 @@ export default function YuridKonsulta() {
         times={[]}
       />
 
-      <Description props={yuridKonsula.documents_needed} />
       <Description props={yuridKonsula.how_work} />
       <Description props={yuridKonsula.who__need} />
 

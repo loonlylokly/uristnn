@@ -3,6 +3,13 @@ import FAQ from "@/modules/Service/FAQ/FAQ";
 import Description from "@/modules/Service/Description/Description";
 import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
+import { registrTsz } from "@/../data/Services/register/registratsiya-tsz";
+
+export const metadata = {
+  title: registrTsz.metadata.title,
+  description: registrTsz.metadata.description,
+  keywords: registrTsz.metadata.keys,
+}
 
 export default function RegTovarish() {
   return (
