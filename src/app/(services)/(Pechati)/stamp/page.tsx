@@ -4,6 +4,13 @@ import Description from "@/modules/Service/Description/Description";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { stampTexts } from "@/../data/Services/pechati/stamp";
 
+export const metadata = {
+  title: stampTexts.metadata.title,
+  description: stampTexts.metadata.description,
+  keywords: stampTexts.metadata.keys,
+}
+
+
 export default function Stamp() {
   return (
     <>

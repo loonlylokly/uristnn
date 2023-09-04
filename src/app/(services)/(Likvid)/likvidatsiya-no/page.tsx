@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { likvidNo } from "@/../data/Services/likvid/likvidatsiya-no";
 
+export const metadata = {
+  title: likvidNo.metadata.title,
+  description: likvidNo.metadata.description,
+  keywords: likvidNo.metadata.keys,
+}
+
 export default function LikvidNekomOrg() {
   return (
     <>

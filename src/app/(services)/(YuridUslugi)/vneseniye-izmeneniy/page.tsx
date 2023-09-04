@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { vnesIzmenen } from "@/../data/Services/yuriduslugi/vnes-izmenen";
 
+export const metadata = {
+  title: vnesIzmenen.metadata.title,
+  description: vnesIzmenen.metadata.description,
+  keywords: vnesIzmenen.metadata.keys,
+}
+
 export default function VnesIzmenen() {
   return (
     <>

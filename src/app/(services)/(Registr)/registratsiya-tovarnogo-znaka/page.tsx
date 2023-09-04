@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { registrTZ } from "@/../data/Services/register/registratsiya-tz";
 
+export const metadata = {
+  title: registrTZ.metadata.title,
+  description: registrTZ.metadata.description,
+  keywords: registrTZ.metadata.keys,
+}
+
 export default function RegTovZnak() {
   return (
     <>

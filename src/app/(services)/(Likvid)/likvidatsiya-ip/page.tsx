@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { likvidIp } from "@/../data/Services/likvid/likvidatsiya-ip";
 
+export const metadata = {
+  title: likvidIp.metadata.title,
+  description: likvidIp.metadata.description,
+  keywords: likvidIp.metadata.keys,
+}
+
 export default function LikvidIP() {
   return (
     <>

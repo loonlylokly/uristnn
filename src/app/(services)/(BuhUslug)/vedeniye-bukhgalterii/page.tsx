@@ -5,6 +5,12 @@ import Price from "@/modules/Service/Price/Price";
 import Breadcrumbs from "@/modules/Breadcrumbs/Breadcrumbs";
 import { vedBukhgal } from "@/../data/Services/buhuslugi/ved-bukhgal";
 
+export const metadata = {
+  title: vedBukhgal.metadata.title,
+  description: vedBukhgal.metadata.description,
+  keywords: vedBukhgal.metadata.keys,
+}
+
 export default function VedenieBuh() {
   return (
     <>
