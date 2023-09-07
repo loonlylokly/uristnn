@@ -18,6 +18,15 @@ const getPostContent = (url: string) => {
   return post;
 }
 
+export function generateMetadata({ params }: { params: { post: string } }) {
+  const post = getPostContent(params.post);
+  return {
+    title: post.data.title,
+    description: post.data.description,
+    keywords: post.data.keywords.split(', '),
+  }
+}
+
 const Post = (props: any) => {
   const post = getPostContent(props.params.post);
   return (

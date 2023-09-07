@@ -18,7 +18,7 @@
 }
 
 .contact__address {
-  width: 350px;
+  width: 280px;
 }
 
 .contact__title {
@@ -27,6 +27,12 @@
 
 .contact__link {
   font-size: 1.8rem;
+}
+
+@media (width >= 780px) {
+  .contact__address {
+    width: 350px;
+  }
 }
 
 @media (width >= 780px) {
