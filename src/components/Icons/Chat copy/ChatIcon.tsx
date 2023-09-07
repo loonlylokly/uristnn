@@ -1,0 +1,21 @@
+import Image from "next/image";
+import React from "react";
+import { FC } from "react";
+
+type Props = {
+  size: number;
+};
+
+const ChatIcon: FC<Props> = ({size}) => {
+  return (
+    <Image
+      src="/icons/chat.svg"
+      alt='Связаться'
+      width={size}
+      height={size}
+      loading = 'eager'
+    />
+  );
+}
+
+export default ChatIcon;

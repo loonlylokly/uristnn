@@ -6,6 +6,7 @@ import Logo from "@/components/Icons/Logo/Logo";
 import DesktopMenu from "@/components/Menu/Header/Desktop/DesktopMenu";
 import MobileMenu from "@/components/Menu/Header/Mobile/MobileMenu";
 import styles from "./Header.module.css";
+import Hamburger from '@/components/Icons/Hamburger/Hamburger';
 
 export default function Header() {
   const hamburgerMenu = useHamburgerMenu((state) => state.hamburgerMenu);
@@ -20,7 +21,9 @@ export default function Header() {
         <DesktopMenu />
 
         <a className={`${styles.btn__phone2} btn btnSecondary`} href="tel:+78314133224">+7 831 413-32-24</a>
-        <button className={styles.hamburger} onClick={toggleMenu} aria-label="Мобильное меню"><span></span><span></span><span></span></button>
+        <button className={styles.hamburger} onClick={toggleMenu} aria-label="Мобильное меню">
+          <Hamburger width={36} height={42}/>
+        </button>
       </header>
       
       <MobileMenu myClassName={`${hamburgerMenu ? styles.openMenu : styles.closeMenu}`} />
