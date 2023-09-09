@@ -21,6 +21,7 @@ const FAQ: FC<Props> = ({props}) => {
         <details key={item.question} className={styles.question} itemProp="mainEntity" itemScope itemType="http://schema.org/Question">
           <summary className={styles.question__title} itemProp="name">{item.question}<span className={styles.marker}></span></summary>
           <span itemScope itemProp="acceptedAnswer" itemType="http://schema.org/Answer">
+            <span  itemProp="text">
             {item.answer.map((itemAnswer, index) => {
               if (typeof(itemAnswer) !== "string") {
                 if (itemAnswer.hasOwnProperty('ordered_list')) {
@@ -28,7 +29,7 @@ const FAQ: FC<Props> = ({props}) => {
                     <ul key={index} className={styles.list}>
                       {itemAnswer.ordered_list.map((item, index) => (
                         <li key={index}>{item}</li>
-                      ))}
+                        ))}
                     </ul>
                   )
                 }
@@ -37,13 +38,14 @@ const FAQ: FC<Props> = ({props}) => {
                     <ol key={index} className={styles.list}>
                       {itemAnswer.unordered_list.map((item, index) => (
                         <li key={index}>{item}</li>
-                      ))}
+                        ))}
                     </ol>
                   )
                 }
               }
-              return (<p key={itemAnswer.toString()} className={styles.answer} itemProp="text">{itemAnswer.toString()}</p>);
+              return (<p key={itemAnswer.toString()} className={styles.answer}>{itemAnswer.toString()}</p>);
             })}
+            </span>
           </span>
         </details>
       ))}
