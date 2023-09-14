@@ -14,18 +14,18 @@ export default function Posts() {
       <Breadcrumbs
         prevsLink={{}}
         prevsName={[]}
-        current="Блог"
+        current="Статьи"
       />
-      <h1>Блог</h1>
-      <div className={styles.lists}>
-      <List
-        classNameList={styles.cards__list}
-        items={postsMetadata}
-        renderItem={(card: PostMetadata) => (
-          <PostCard key={card.url} card={card} />
-        )}
-      />
-      </div>
+      <h1 className={styles.title}>Статьи</h1>
+      <section className={styles.list}>
+        <List
+          classNameList={styles.cards__list}
+          items={postsMetadata}
+          renderItem={(card: PostMetadata) => (
+            <PostCard key={card.url} card={card} />
+          )}
+        />
+      </section>
     </>
   );
 }

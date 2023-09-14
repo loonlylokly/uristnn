@@ -13,8 +13,8 @@ const PostCard: FC<Props> = ({card}) => {
       <div className={styles.header}>
         <h3 className={styles.title}>{card.title}</h3>
       </div>
-      <p className={styles.text}>{card.description}</p>
-      <p className={styles.date}>{card.date.toString()}</p>
+      <p className={styles.text}>{card.description.slice(0, 100)+'...'}</p>
+      <span className={styles.wrapdate}><p className={styles.date}>{card.date.toString()}</p></span>
     </Link>
   );
 };
