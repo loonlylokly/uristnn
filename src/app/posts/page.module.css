@@ -1,0 +1,21 @@
+.title {
+  padding-top: 8px;
+}
+
+.list{
+  padding: 8px 20px 20px;
+}
+
+.cards__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (width >= 540px) {
+  .card {
+    min-width: 230px;
+  }
+}

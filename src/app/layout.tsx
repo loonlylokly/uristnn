@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Header from '@/modules/Header/Header';
@@ -52,7 +53,7 @@ export default function RootLayout({
             });`
           }
         </Script>
-        <noscript><div><Image src="https://mc.yandex.ru/watch/94862280" style={{position: "absolute", left: "-9999px"}} alt="YM" /></div></noscript>
+        <noscript><div><img src="https://mc.yandex.ru/watch/94862280" style={{position: "absolute", left: "-9999px"}} alt="YM" /></div></noscript>
       </body>
     </html>
   )

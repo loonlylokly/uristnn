@@ -21,7 +21,7 @@ const Toc: FC<Props> = ({toc, toc_link, url}) => {
           width={24}
           height={24}
         />
-        Содержание
+        <span className={styles.title}>Содержание</span><span className={styles.arrow}>▶</span>
       </summary>
       <ol className={styles.toc__list}>
         {tocArr[0] !== "" && tocArr.map((subtitle, index) => (

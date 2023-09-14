@@ -4,8 +4,17 @@
 }
 
 .content ul {
-  padding: 0 40px;
+  padding: 4px 40px;
   list-style-type: "—  ";
+}
+
+.content ol {
+  padding: 5px 40px;
+}
+
+.content ol li,
+.content ul li {
+  padding: 4px 0;
 }
 
 .content h2 {

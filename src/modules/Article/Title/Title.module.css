@@ -1,12 +1,12 @@
 .wrapper {
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
   background: hsl(var(--color-titan));
 }
 
-.header {
+/* .header {
   padding: 20px 20px;
-}
+} */
 
 .breadcrumbs {
   padding-bottom: 16px;
@@ -38,9 +38,9 @@
 }
 
 @media (width >= 855px) {
-  .header {
+  /* .header {
     padding-inline: 40px;
-  }
+  } */
 
   .title {
     font-size: 3.6rem;
@@ -48,9 +48,9 @@
 }
 
 @media (width >= 1200px) {
-  .header {
+  /* .header {
     padding-inline: 80px;
-  }
+  } */
 
   .title {
     font-size: 3.8rem;
@@ -58,7 +58,7 @@
 }
 
 @media (width >= 1660px) {
-  .header {
+  /* .header {
     padding-inline: calc((100% - 1476px) / 2);
-  }
+  } */
 }

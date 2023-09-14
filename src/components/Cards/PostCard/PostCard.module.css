@@ -1,0 +1,30 @@
+.card {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  background: var(--color-back-primary);
+  border: 1px solid var(--color-text-primary);
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  transition: .3s;
+  text-decoration: none;
+}
+
+.wrapdate {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@media (width >= 540px) {
+  .card {
+    width: 45%;
+  }
+}
