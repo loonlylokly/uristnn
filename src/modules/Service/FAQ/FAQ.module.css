@@ -8,15 +8,28 @@
   box-shadow: 4px 4px 10px -4px rgba(0, 0, 0, 0.25), -4px -4px 10px -4px rgba(0, 0, 0, 0.25);
   user-select: none;
   cursor: pointer;
+  transition: .5s;
 }
 
 .question__title {
   padding: 20px;
   font-size: 1.8rem;
+  transition: .5s;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question[open=""] {
+  transition: .5s;
+}
+
+.question[open=""] .question__title {
+  padding: 20px 20px 20px;
+  transition: .5s;
 }
 
 .answer {
-  padding: 0 20px 22px 20px;
+  padding: 0px 20px 15px 20px;
 }
 
 .list {
@@ -33,12 +46,27 @@
   list-style: none;
 }
 
+.marker {
+  padding-top: 2px;
+  font-size: 1.3rem;
+  transition: .3s;
+  height: 18px;
+}
+
+
+.question[open] .marker {
+  padding-top: 0px;
+  padding-left: 4px;
+  transform: rotate(90deg);
+  transition: .3s;
+}
+
 /* Добавляем собственный маркер для закрытого состояния */
 /* .marker::after {
   content: '+';
 } */
 
 /* Добавляем собственный маркер для открытого состояния */
-.question[open] > .marker:after {
+/* .question[open] > .marker:after {
   content: '-';
-}
+} */

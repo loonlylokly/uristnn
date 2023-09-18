@@ -19,7 +19,7 @@ const FAQ: FC<Props> = ({props}) => {
       <h2 className={styles.title}>{props.title}</h2>
       {props.questions.map((item) => (
         <details key={item.question} className={styles.question} itemProp="mainEntity" itemScope itemType="http://schema.org/Question">
-          <summary className={styles.question__title} itemProp="name">{item.question}<span className={styles.marker}></span></summary>
+          <summary className={styles.question__title} itemProp="name">{item.question}<span className={styles.marker}>▶</span></summary>
           <span itemScope itemProp="acceptedAnswer" itemType="http://schema.org/Answer">
             <span  itemProp="text">
             {item.answer.map((itemAnswer, index) => {

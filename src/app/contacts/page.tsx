@@ -1,8 +1,9 @@
-import styles from './page.module.css'
 import { Metadata } from 'next';
 import Breadcrumbs from '@/modules/Breadcrumbs/Breadcrumbs';
+import styles from './page.module.css'
 
 export const metadata: Metadata = {
+  title: 'Контакты «Статский Советник» Юридическое агенство',
   description: 'Юридическая помощь в Нижнем Новгороде быстро и профессионально. Юристы с опытом от 10 лет. Срочная помощь. Контактная информация, адрес, электронная почта. Звоните нам по номеру ☎ +7 (831) 4…',
 }
 
