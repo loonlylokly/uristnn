@@ -8,7 +8,6 @@ import PopUp from '@/modules/PopUp/PopUp';
 import PopUpContacts from '@/components/Lists/PopUpContacts/PopUpContacts';
 import PopUpForm from '@/components/Forms/PopUpForm/PopUpForm';
 import Script from 'next/script';
-import YandexMetrika from '@/components/YandexMetrics/YandexMetrics';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -57,7 +56,6 @@ export default function RootLayout({
             });`
           }
         </Script>
-        <YandexMetrika />
       </body>
     </html>
   )
