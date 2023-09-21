@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Breadcrumbs from '@/modules/Breadcrumbs/Breadcrumbs';
 import styles from './page.module.css'
+import AddressPath from '@/modules/AddressPath/AddressPath';
 
 export const metadata: Metadata = {
   title: 'Контакты «Статский Советник» Юридическое агенство',
@@ -37,6 +38,7 @@ export default function Contacts() {
         </ul>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A742874dccc9a71afd2d7020987f37d97addb1afaa59445b48a6345ab530f18b9&amp;source=constructor" width="100%" height="450" frameBorder="0"></iframe>
       </section>
+      <AddressPath />
     </>
   )
 }
