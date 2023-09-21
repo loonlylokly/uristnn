@@ -9,7 +9,7 @@ const AddressIcon: FC<Props> = ({size}) => {
   return (
     <Image
       src="/icons/address.svg"
-      alt='Позвонить'
+      alt='Адрес'
       width={size}
       height={size}
     />
